@@ -31,11 +31,22 @@ a { color: inherit; }
   padding: 24px 6vw;
 }
 .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+.brand-logo {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+.brand-name {
   font-family: "Fraunces", Georgia, serif;
   font-size: 22px;
   font-weight: 600;
   letter-spacing: -0.01em;
-  text-decoration: none;
 }
 
 /* Hero */
@@ -130,4 +141,14 @@ a { color: inherit; }
   padding: 28px 6vw;
   font-size: 13px;
   color: var(--soft);
+}
+.site-footer a {
+  color: var(--accent);
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  border-bottom: 1px solid rgba(47, 79, 70, 0.3);
+  padding-bottom: 1px;
+}
+.site-footer a:hover {
+  border-bottom-color: var(--accent);
 }
